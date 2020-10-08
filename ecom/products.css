@@ -1,0 +1,157 @@
+body {
+          background-color: #5CA4E0;
+          margin:0;
+          padding:0;
+          
+          }
+          li, a, button {
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #000000; 
+                    text-decoration: none;
+          
+          }
+          /* Flexbox Model used.Z index used only for a positioned element and made nav bar transparent */
+header {
+                     display: flex;
+                     justify-content: flex-end;
+                     width: 100%;
+                     max-width: 100%;
+                     position: absolute;
+                     z-index: 1;
+                    
+          
+          }
+          
+.nav-bar {
+                    list-style: none;
+                    
+          }
+          
+.nav-bar li {
+                    display: inline-block;
+                    padding: 0px 20px;
+          }
+          
+.nav-bar li a {
+                    transition: all 0.3s ease 0s;
+          }
+.nav-bar li a:hover {
+                    color:#4EB5CB;
+          }
+          
+button {
+          padding: 15px 15px;
+          background-color: rgba(0,136,169,1);
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+          }
+          
+button:hover {
+          background-color: rgba(0,136,169,0.8);
+          }
+          /* End of Navbar  */
+.card {
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 50%;
+          color:#181C3B;
+          width:20%;
+          border-radius:2px;
+          box-shadow:0 4px 8px 0 rgba(0,0,0,.2);
+          display:inline-table;  
+          justify-content: space-evenly;
+          }
+
+
+                  /* targets my class ID and uses padding to secure texts in middle to make it look cleaner */
+ .container {
+                    padding: 10px 2px;
+                  }
+                  /* Target my img by giving it a nice solid border line  */
+img {
+          border-radius: 5px 5px 0 0;
+          border-style:solid;
+}
+.wrapped{
+          display:inline-block;
+          justify-content:center;
+                  }
+
+/* Footer begins. RGBA used to create transparant effect because of opacity*/
+footer {
+          list-style: none;
+          color: white;
+          position:sticky;
+          
+          left:0;
+          bottom:0;
+          width: 100%;
+          height: fit-content;
+          text-align: center;
+          background-color: rgba(78, 80, 94, 0.301);
+        }
+        
+.footer-social{
+          font-family: 'Josefin Sans', sans-serif;
+          color:#000;
+          font-size:26px;
+          display:inline-flex;
+          justify-content:center;
+          width: 100%;
+        }
+        /* social media icon styling  */
+.fa {
+                  color: white;
+                  width:auto;
+                  height: 20px;
+                  margin: 0 5px;
+        }
+         
+        /* I used this ID to get my paragraph a different color and text size for the footer section */
+#copyright{
+          font-family: 'Josefin Sans', sans-serif;
+          display:inline-block;
+          text-align: center;
+          font-size: 20px;
+          color:#000000;
+          margin:0;
+        }
+
+        @media screen and (max-width: 800px) {
+                  .card {
+                    font-size: 80%;
+                    width: 80%;
+
+                  }
+                  li, a, button { 
+                            font-size: 30px;
+                    
+
+                  }
+                  .container {
+                            font-size:50%;
+                  }
+                  
+        }
+        /* Media quieries for max width */
+
+        @media screen and (min-width:800px) {
+          .card {
+                    font-size: 30%;
+          }
+          header {
+                    max-width: 1300px;
+                    }
+          .hero::before {
+                    max-width: 1300px;
+                  
+                    
+
+          }
+          .hero-title {
+                    font-size:10rem ;
+          }
+}
